@@ -5,16 +5,23 @@
   /* Full height */
   height: 100%;
 
-  /* Center and scale the image nicely */
+  /* Center and scale the image */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- /* display :grid;*/
+
+ /*grid-template-columns: repeat(auto-fit,100px);*/
+
+  background-size:100% 100vh;
+  
+
+
 }
 
 body, html {
   height: 100%;
 }
+
 .button{
 	border-radius: 50px;
 	background-color: #c71585f5;
@@ -22,16 +29,59 @@ body, html {
   color: white;
   padding: 20px;
   text-align: center;
-  /*text-decoration: none;*/
-  /*display: inline-block;*/
-  font-size: 15px;
-  margin: 10px 10px;
-
+  
+  font-size: 20px;
+  margin: 5px 5px;
+/*position: absolute;*/
   position:relative;
-    transition: .9s ease;
-    top: 40px;
-    bottom: -100px;
-    left: 30px;
-    right: -100px;
+   /* transition: .9s ease;
     
+   
+    
+    */
+    font-weight: bold;
+     bottom: -100px;
+   right: -100px;
+   top: 30px;
+   left: 10px;
+    /*-webkit-border-radius: .5vw;*/
+    /*line-height: 4.3vw;*/
+    color: white;
+   
+    width: 30%;
+    text-align: center;  
+    border: white 2px solid ;    
+   
+}
+
+.h1Div {
+
+    text-align: center;
+    margin: 20px;
+    color: yellowgreen;
+}
+.buttonH4{
+  border-radius: 30px;
+  background-color: #c71585f5;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  
+  background-color: violet;
+    font-size: unset;
+    padding: 10px;
+    position: relative;
+    margin: 10px 10px 50px 620px;
+    
+}
+pre {
+  color: #9C27B0;
+    font-size: x-large;
+    text-align: -webkit-center;
+}
+.h2{
+  text-align: center;
+    margin: 20px;
+    color: red;
 }
