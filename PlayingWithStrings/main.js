@@ -1,5 +1,6 @@
 //Let's Play
 var id ;
+var numberOfTheQ;
 
 //to get  an array of questions
 var questions = document.getElementsByClassName("Q")
@@ -12,7 +13,7 @@ $( "#Ask" ).click(function() {
 
     var x = Math.floor(Math.random() * 17);
   	id = x.toString();
-    var numberOfTheQ = document.getElementById(id).id
+    numberOfTheQ = document.getElementById(id).id
      console.log(numberOfTheQ)
   	if( $('#'+id).hasClass("hide")){
 		 $('#'+id).addClass("show");
@@ -380,6 +381,7 @@ var replaceString = document.getElementsByClassName("replaced")[0].value;
 
 $( ".submit" ).click(function() {
 
+	numberOfTheQ =0;
 
 	 if( $('#'+id).hasClass("show")){
 	 	 $('#'+id).addClass("hide");
@@ -390,36 +392,43 @@ $( ".submit" ).click(function() {
     if($(".inputString1").hasClass("show")){
 	    $(".inputString1").removeClass("show");
 		$(".inputString1").addClass("hide");
+		$(".inputString").val("")
 }
 
     if($(".char1").hasClass("show")){
 		$(".char1").removeClass("show");
 		$(".char1").addClass("hide");
+		$(".char").val("");
 }
     
     if($(".outputString1").hasClass("show")){
 		$(".outputString1").removeClass("show");
 		$(".outputString1").addClass("hide");
+		$(".outputString").val("");
 	}
 
 	if($(".start1").hasClass("show")){
 		$(".start1").removeClass("show");
 	    $(".start1").addClass("hide");
+	    $(".start").val("");
 	}
 
 	if($(".replaced1").hasClass("show")){
 	    $(".replaced1").removeClass("show");
 	    $(".replaced1").addClass("hide");
+	    $(".replaced").val("");
 	}
 
 	if($(".end1").hasClass("show")){
 	    $(".end1").removeClass("show");
 	    $(".end1").addClass("hide");
+	    $(".end").val("");
 	}
 
 	if($(".length111").hasClass("show")){
 		$(".length111").removeClass("show");
 		$(".length111").addClass("hide");
+		$(".length11").val("");
 	}
 
 
