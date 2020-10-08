@@ -11,7 +11,7 @@ var buttons = document.getElementsByClassName("Pbutton")
 $( "#Ask" ).click(function() {
 //to iterate the array of questions 
 
-    var x = Math.floor(Math.random() * 17);
+    var x = Math.floor(Math.random() * 18);
   	id = x.toString();
     numberOfTheQ = document.getElementById(id).id
      console.log(numberOfTheQ)
@@ -48,7 +48,7 @@ var replaceString = document.getElementsByClassName("replaced")[0].value;
 
 //if the Lenght button was clicked , return the length of the input string
 	if ( clickedButton === "Length"){
-		if(numberOfTheQ === "16" ){
+		if(numberOfTheQ === "17" ){
 				$("input:disabled").val(InputString.length);
 
 			if( $(".inputString1").hasClass("hide")){
@@ -206,7 +206,7 @@ var replaceString = document.getElementsByClassName("replaced")[0].value;
 //if the sub button was clicked ,substr() is similar to slice()
 //The difference is that the second parameter specifies the length of the extracted part.
 	else if ( clickedButton === "sub"){
-       if(numberOfTheQ === "14" ){ 
+       if(numberOfTheQ === "15" ){ 
 	        $("input:disabled").val(InputString.substr(start,lengthOf)); 
 
 	        if( $(".inputString1").hasClass("hide")){
@@ -227,7 +227,7 @@ var replaceString = document.getElementsByClassName("replaced")[0].value;
 	}
 //if the sub2 button was clicked ,it will slice out the rest of the string.
 	else if ( clickedButton === "sub2"){
-		if(numberOfTheQ === "15" ){ 
+		if(numberOfTheQ === "16" ){ 
 	        $("input:disabled").val(InputString.substr(start));
 
 	        if( $(".inputString1").hasClass("hide")){
@@ -355,7 +355,7 @@ var replaceString = document.getElementsByClassName("replaced")[0].value;
 	}
 //if the split button was clicked , it converts a string to an array
 	else if ( clickedButton === "split"){
-     if(numberOfTheQ === "13" ){
+     if(numberOfTheQ === "14" ){
 		$("input:disabled").val(InputString.split(Char));
 
 		if( $(".inputString1").hasClass("hide")){
@@ -381,7 +381,7 @@ var replaceString = document.getElementsByClassName("replaced")[0].value;
 
 $( ".submit" ).click(function() {
 
-	numberOfTheQ =0;
+	numberOfTheQ = 0;
 
 	 if( $('#'+id).hasClass("show")){
 	 	 $('#'+id).addClass("hide");

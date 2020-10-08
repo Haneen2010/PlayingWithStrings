@@ -106,7 +106,7 @@ pre {
     width: 200px;
     position:relative; 
     left:500px; 
-    top:100px;
+    top:20px;
     
     align-content: center;
     
@@ -123,18 +123,35 @@ pre {
 
 .right{
   float:right;
+  padding: 8px;
+    padding-bottom: 10px;
+    margin-right: 100px;
+
+    
+   
 }
 .left{
   float: left;
+  padding: 8px;
+    padding-bottom: 10px;
+    
+    margin-left: 100px;
+    margin-left: 100px;
+    margin-top: 10px
+    margin-top: 10px;
 }
+
 .clear{
-  clear: both;
+  float: center;
+  padding: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 .item {
-    width: 33.33%;
     float: left;
-    padding: 8px;
-    padding-bottom: 50px;
+    padding: 10px;
+    padding-bottom: 10px;
 }
 
 #Ask {
@@ -142,8 +159,10 @@ pre {
     background-color: darkturquoise;
     background-position: center;
     font-size: x-large;
-    margin-left: 100px;
-    margin-top: 80px;
+    margin-left: 150px;
+    margin-top: 50px;
+
+    top:30px;
 }
 .Q{
 
@@ -155,4 +174,39 @@ pre {
     border-radius: 50px;
     font-size: xx-large;
     padding: 5px 5px 10px 10px;
+    background-color: #80e609fc;
+    background-color: navajowhite;
+    font-size: x-large;
+
+}
+.submit{
+  border: revert;
+    background-color: darkturquoise;
+    background-position: center;
+    font-size: x-large;
+    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+}
+
+.same{
+    font-size: larger;
+    margin: 50px;
+    margin-left: 50px;
+    margin-right:50px;
+
+}
+
+.str{
+  font-size: larger;
+  margin: 50px;
+  margin-left: 50px
+    margin-right:50px;
+     margin-top: 80px;
+    margin-bottom: 50px;
+}
+.s{
+  text-align: center;
+  margin: 50px;
 }
